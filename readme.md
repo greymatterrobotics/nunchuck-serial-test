@@ -1,0 +1,1 @@
+A simple test for reading data from the Arduino/nunchuck in to the SR Beagleboard. It expects to recieve a number between 0 and 255 on port ttyACM0.
