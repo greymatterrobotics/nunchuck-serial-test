@@ -10,7 +10,7 @@ while True:
 	#x = str(randint(0,255)) #<< For testing without use of serial
 	try:
 		if x != last: #Only print if the read value has changed (helps tidy up the log)
-			last = xoyt
+			last = x
 			print "Raw: " + str(x)
 			x = float(x) #Cast to float
 			print "Float: " + str(x)
