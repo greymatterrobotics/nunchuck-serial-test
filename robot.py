@@ -10,12 +10,12 @@ while True:
 	#x = str(randint(0,255)) #<< For testing without use of serial
 	try:
 		if x != last: #Only print if the read value has changed (helps tidy up the log)
-			last = x
+			last = xoyt
 			print "Raw: " + str(x)
-			x = int(x) #Cast to integer
-			print "Int: " + str(x)
-			x = int(round((float(x) / 255) * 100)) #Cast to float, do maths, round and cast back to int
-			print "Adjusted: " + str(x)
+			x = float(x) #Cast to float
+			print "Float: " + str(x)
+			x = int(round((x / 255) * 100)) #Do maths on float, round and cast back to int
+			print "Adjusted Int: " + str(x)
 			print "--------------"
 	except ValueError:
 		pass
