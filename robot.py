@@ -6,7 +6,7 @@ ser = serial.Serial('/dev/ttyACM0', 19200)
 last = ""
 
 while True:
-	x = ser.readline().strip
+	x = ser.readline().strip()
 	#x = str(randint(0,255)) #<< For testing without use of serial
 	try:
 		if x != last: #Only print if the read value has changed (helps tidy up the log)
